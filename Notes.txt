@@ -1,0 +1,21 @@
+How to do the animation :
+-- Zao no anaovana azy
+-- Misy fenetre vao miditra eo
+-- Misy boutton telo eo :
+----> Play a random case
+----> Play an entered case
+----> Show an solved case
+
+--> Rehefa Random case :
+----> Dia mi-shuffle any ambadika any
+----> Averina apoitra eo amin'ny ecran ilay izy
+----> Misy boutton eo hoe solve
+----> Manomboka ho azy ny animation
+----> Eo no mila misaina kely hoe ahoana no anaovako azy
+
+--> Rehefa entered case :
+----> Misy fenetre kely eo mandray ny input an'ilay olona hoe firy * firy ilay case
+----> Misy Fenetre hafa indray eo hoe iza avy ilay valeur
+----> Farany apoitra ilay fenetre ana random case
+
+--> Solved case
