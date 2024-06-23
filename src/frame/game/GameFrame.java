@@ -1,8 +1,7 @@
 package frame.game;
 import javax.swing.*;
-import java.awt.*;
-
 import game.Taquin;
+
 public class GameFrame extends JFrame{
 	GamePanel panels;
 	public GameFrame(){

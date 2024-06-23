@@ -3,12 +3,10 @@ import java.util.Random;
 import java.util.Vector;
 import utils.Points;
 import java.util.LinkedList;
-import java.util.Stack;
 import java.util.Queue;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.Arrays;
-import java.util.Collections;
 import frame.game.*;
 import myException.*;
 import javax.swing.Timer;
@@ -196,8 +194,6 @@ public class Taquin{
 	}
 
 	public void mains(){
-		Stack<Taquin> notVisited = new Stack<Taquin>();
-		Stack<Taquin> visited = new Stack<Taquin>();
 		Taquin solved = null;
 		solved = this.solve();
 		this.lastMoves = solved;

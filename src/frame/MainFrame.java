@@ -4,8 +4,6 @@ import javax.swing.*;
 
 import frame.game.MainPanels;
 
-import java.awt.*;
-
 public class MainFrame extends JFrame{
 	// Inona no atao ato
 	// Mila manana panels aloha izy

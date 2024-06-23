@@ -1,7 +1,6 @@
 package frame.game.listener;
 
 import java.awt.event.*;
-import java.awt.*;
 import javax.swing.*;
 
 import frame.game.*;

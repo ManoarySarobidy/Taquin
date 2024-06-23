@@ -7,6 +7,7 @@ public class MainPanels extends JPanel{
 	// Manana boutton 3 ny main Panel
 	// De manana combobox iray
 
+	@SuppressWarnings("rawtypes")
 	JComboBox matrix;
 	JButton random;
 	JButton specific;
