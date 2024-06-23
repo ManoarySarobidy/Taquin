@@ -1,4 +1,4 @@
-package frame;
+package frame.game;
 import javax.swing.*;
 import java.awt.*;
 import frame.listener.*;
