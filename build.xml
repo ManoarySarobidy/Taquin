@@ -1,0 +1,46 @@
+<project name="Taquin Game" default="compile">
+    <property name="source-directory" value="./src" />
+    <property name="build-directory" value="./build" />
+    <property name="main-class" value="main.Main"/>
+
+    <target name="init">
+        <echo> Initialisation project </echo>
+            <echo> Create build/classes </echo>
+        <mkdir dir="${build-directory}/classes" />
+        <echo> build/classes created successfully</echo>
+            <echo> Create build/jar </echo>
+        <mkdir dir="${build-directory}/jar" />
+        <echo> build/jar created successfully</echo>
+    </target>
+
+    <target name="clean">
+        <echo> ----- Taquin Game S4 - Manoary Sarobidy ----- </echo>
+            <echo> ----- Cleaning ----- </echo>
+            <delete includeEmptyDirs="true">
+                <fileset dir="${build-directory}/classes/"/>
+            </delete>
+            <delete includeEmptyDirs="true">
+                <fileset dir="${build-directory}/jar" />
+            </delete>
+            <echo> ----- Clean Finished ----- </echo>
+    </target>
+
+    <target name="compile" depends="init">
+        <echo> Compiling project </echo>
+        <javac destdir="${build-directory}/classes" srcdir="${source-directory}" includeantruntime="false" verbose="on" debug="on" />
+        <echo> Compiled successfully </echo>
+    </target>
+
+    <target name="jar" depends="compile">
+        <jar destfile="${build-directory}/jar/${ant.project.name}.jar" basedir="${build-directory}/classes">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}" />
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="${build-directory}/jar/${ant.project.name}.jar" fork="true"/>
+    </target>
+    
+</project>
